@@ -1,2 +1,4 @@
 import random
-import card
+from card import *
+
+

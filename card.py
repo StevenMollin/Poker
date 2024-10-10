@@ -3,17 +3,17 @@ import random
 class Card:
 
     CARD_LIST = []
-    SUIT = 'BRMF'
+    SUIT = 'SHDC'
     POINT = '23456789TJQKA'
 
     def __init__(self):
         self.create_card_list()
         self.shuffle()
 
-    def shuffle(self) -> None:
+    def shuffle(self):
         random.shuffle(self.CARD_LIST)
 
-    def create_card_list(self) -> None:
+    def create_card_list(self):
         con = 0
         for s in self.SUIT:
             for n in self.POINT:
